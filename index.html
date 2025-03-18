@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godzilla Monster Search</title>
+    <link rel="stylesheet" href="godzillamonstersearch.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="">Grodd Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-image">
+            <img src="grodd.jpg" alt="grodd">
+        </div>
+
+       <div>
+        <p>Grodd Shall Rule</p>
+       </div>
+       <div class="container">
+        <form id="myForm" class="search-form js-search-form" action="/search" method="GET">
+            <label for="search">Search for Monsters:</label>
+            <input type="search" id="searchInput" name="q" class="search-input js-search-input"
+                placeholder="Search for Grodd's Enemies" required aria-label="Search for Grodd's Enemies" autofocus>
+            <button type="submit">Search</button>
+            <span class="validity"></span>
+        </form>
+        <div class="loading-indicator">
+            <div class="sk-chase js-spinner hidden">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+    </div>
+    <section class="search-results js-search-results"></section>
+    
+    </div>
+    </main>
+    <footer>
+        <audio controls autoplay loop>
+            <source src="Godzilla-Growl.wav" type="audio/wav">
+        </audio>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
